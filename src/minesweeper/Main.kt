@@ -51,9 +51,7 @@ fun MutableList<MineLocation>.findByMineLocation(x: Int, y: Int): Int {
     return -1
 }
 
-class Minesweeper(
-    private val mines: Int,
-    boardSize: Int = 9) {
+class Minesweeper(private val mines: Int, boardSize: Int = 9) {
 
     private val gameBoard = Array(boardSize) { Array(boardSize) { '.' } }
     private val mineLocations = mutableListOf<MineLocation>()
